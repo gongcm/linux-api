@@ -6,6 +6,7 @@
     对于这7种文件类型Linux内核中用统一的结构体struct file 去描述。然后使用RBtree对文件进行管理。
 
     在内核中使用struct file结构体进行描述：
+        
         struct file {
                 /*
                  * fu_list becomes invalid after file_free is called and queued via
@@ -118,7 +119,7 @@
     #include <pwd.h>
         /etc/passwd 
         /etc/shadow
-        
+
     #include<netdb.h>
     // struct hostent   /etc/hosts          getnameinfo         getaddrinfo
     // struct netent    /etc/networks       getnetbyname        getnetbyaddr
