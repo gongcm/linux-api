@@ -126,3 +126,6 @@
     // struct protent   /etc/protocols      Getprotobyname      getprotobynumber
     // struct servent   /etc/services       getservbyname       getservbyport
      
+#Changge log
+
+    - 2019-6-28 增加 opendir 相关的测试函数。
