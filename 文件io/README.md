@@ -1,3 +1,7 @@
+# Changge log
+    - 增加fcntl测试
+    - 2019-6-28 增加 opendir readdir closedir 相关的测试 和 fnmatch函数测试。
+
 # Linux 文件设计
 
 - linux是一切皆为文件思想设计的。
@@ -126,6 +130,3 @@
     // struct protent   /etc/protocols      Getprotobyname      getprotobynumber
     // struct servent   /etc/services       getservbyname       getservbyport
      
-#Changge log
-
-    - 2019-6-28 增加 opendir 相关的测试函数。
