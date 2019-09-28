@@ -25,6 +25,10 @@
 #define tcp_printf(format,args...) 
 #endif
 
+int tcp_socket()
+{
+  return socket(AF_INET,SOCK_STREAM,0);
+}
 
 int tcp_bind(int fd,char * ip,int port)
 {

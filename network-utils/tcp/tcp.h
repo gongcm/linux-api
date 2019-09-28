@@ -11,6 +11,8 @@ typedef struct tcp_addr{
   int  port;
 }tcp_addr;
 
+int tcp_socket();
+
 int tcp_bind(int fd,char * ip,int port);
 int tcp_listen(int fd,int max);
 int tcp_accept(int fd,tcp_addr * addr);

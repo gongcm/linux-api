@@ -2,10 +2,6 @@
 #include <stdlib.h> // atoi
 #include <string.h>
 #include <unistd.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <netdb.h>
 #include <string.h>
 
 #include "tcp.h"
@@ -30,7 +26,7 @@ int main(int argc, char const *argv[])
     // tcp socket fd
 
    // 1. create socket
-    sockfd = socket(AF_INET,SOCK_STREAM,0);
+    sockfd = tcp_socket(); //socket(AF_INET,SOCK_STREAM,0);
     if(sockfd < 0){
         perror("socket : ");
         return -1;

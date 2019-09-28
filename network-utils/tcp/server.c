@@ -4,10 +4,6 @@
 #include <string.h>
 #include <errno.h>
 
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-
 #include "tcp.h"
 
 /*
@@ -32,7 +28,7 @@ int main(int argc, char const *argv[])
     printf("server port : %d \n",atoi(argv[1]));
 
    // 1. socket
-    sockfd = socket(AF_INET,SOCK_STREAM,0);
+    sockfd = tcp_socket(); //socket(AF_INET,SOCK_STREAM,0);
     if(sockfd < 0){
         perror("socket : ");
         return -1;
